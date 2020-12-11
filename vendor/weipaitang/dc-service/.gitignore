@@ -1,0 +1,7 @@
+/vendor/
+.idea/
+storage/
+.DS_Store
+composer.lock
+.env
+/index.php

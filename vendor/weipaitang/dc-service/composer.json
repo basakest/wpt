@@ -1,0 +1,39 @@
+{
+    "name": "weipaitang/dc-service",
+    "description": "dc-service",
+    "type": "library",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": "^7.0",
+        "ext-json": "*",
+        "ext-curl": "*",
+        "weipaitang/common-library": "~0.0.1"
+    },
+    "require-dev": {
+        "vlucas/phpdotenv": "~4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "WptDataCenter\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "suggest": {
+        "-->> 异常&错误处理 <<--": "必须在try..catch里 执行代码 处理异常"
+    },
+    "repositories": {
+        "packagist": {
+            "type": "composer",
+            "url": "https://mirrors.aliyun.com/composer"
+        },
+        "proprietary": {
+            "type": "composer",
+            "url": "https://packagist.wpt.la"
+        }
+    }
+}

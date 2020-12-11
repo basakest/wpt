@@ -1,0 +1,27 @@
+{
+  "name": "sdk/rainbow",
+  "description": "服务代理rainbow php客户端",
+  "authors": [
+    {
+      "name": "jingwanglong",
+      "email": "jingwl@weipaitang.com"
+    }
+  ],
+  "require": {
+  },
+  "autoload": {
+    "psr-4": {
+      "Rainbow\\": "src/"
+    }
+  },
+  "repositories": {
+    "packagist": {
+      "type": "composer",
+      "url": "https://mirrors.aliyun.com/composer"
+    },
+    "proprietary": {
+      "type": "composer",
+      "url": "https://packagist.wpt.la"
+    }
+  }
+}

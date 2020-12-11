@@ -1,0 +1,27 @@
+#image: centos
+image: reg.weipaitang.com/pay/paysdk:v1.3
+stages:
+  - testing
+  - gittag
+
+testing:
+  tags:
+    - docker
+  stage: testing
+  script:
+    #- composer config -g repo.packagist composer https://packagist.phpcomposer.com
+    - composer install
+    - php vendor/bin/phpunit --configuration phpunit.xml --coverage-text --colors=never
+  only:
+    - master
+
+gittag:
+  tags:
+    - docker
+  stage: gittag
+  script:
+    - cd ~
+    - ./git-tag.sh
+  when: manual
+  only:
+    - master

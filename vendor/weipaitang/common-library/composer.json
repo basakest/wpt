@@ -1,0 +1,31 @@
+{
+    "name": "weipaitang/common-library",
+    "description": "微拍堂-通用工具包",
+    "authors": [
+        {
+            "name": "黄海峰",
+            "email": "huanghf@weipaitang.com"
+        }
+    ],
+    "type": "library",
+    "minimum-stability": "dev",
+    "require": {
+        "illuminate/support": "*",
+        "monolog/monolog": "*",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~7.0",
+        "vlucas/phpdotenv": "^4.0@dev",
+        "illuminate/filesystem": "*"
+    },
+    "autoload": {
+        "files": [
+            "src/helpers.php"
+        ],
+        "psr-4": {
+            "WptCommon\\Library\\": "src/"
+        }
+    },
+    "license": "proprietary"
+}

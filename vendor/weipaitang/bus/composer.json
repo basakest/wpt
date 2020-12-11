@@ -1,0 +1,40 @@
+{
+    "name": "weipaitang/bus",
+    "description": "微拍堂-总线",
+    "authors": [
+        {
+            "name": "李海涛",
+            "email": "liht@weipaitang.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "WptBus\\": "src/"
+        }
+    },
+    "repositories": {
+        "packagist": {
+            "type": "composer",
+            "url": "https://mirrors.aliyun.com/composer"
+        },
+        "proprietary": {
+            "type": "composer",
+            "url": "https://packagist.wpt.la"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "illuminate/validation": "*",
+        "weipaitang/common-library": "~0.0.31",
+        "weipaitang/utils": "^1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~6.0"
+    }
+}

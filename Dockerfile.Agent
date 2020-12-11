@@ -1,0 +1,5 @@
+FROM reg.weipaitang.com/library/nginx:stable-8082
+# 为了将/data/www/marketing.weipaitang.com通过emptydir方式共享给shazam-agent
+# 在该容器启动时，先将/data/www/marketing下的文件copy到/data/www/marketing.weipaitang.com
+COPY marketing-admin /data/www/marketing
+COPY config /data/www/marketing
